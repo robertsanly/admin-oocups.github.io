@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" class="has-aside-left has-aside-mobile-transition has-navbar-fixed-top has-aside-expanded">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oocups | Profile</title>
+  <link rel="icon" href="img/favicon2.png" >
+  <!-- Bulma is included -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
+  <link rel="stylesheet" href="css/bulma.css">
+  <link rel="stylesheet" href="css/set.css">
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="app">
+  <!-- start top bar -->
+    <nav id="navbar-main" class="navbar is-fixed-top has-background-white ">
+      <div class="navbar-brand">
+        <a class="navbar-item is-hidden-desktop jb-aside-mobile-toggle">
+          <!-- <span class="icon"><i class="mdi mdi-forwardburger mdi-24px"></i></span> -->
+          <span class="icon"><i class="fas fa-angle-double-right"></i></span>
+        </a>
+        <div class="navbar-item has-control">
+          <span class="has-text-black-ter is-size-4 has-text-weight-semibold pl-2">My Profile</span>
+          <!-- <div class="control"><input placeholder="Search everywhere..." class="input"></div> -->
+        </div>
+      </div>
+      <div class="navbar-brand is-right">
+        <a class="navbar-item is-hidden-desktop jb-navbar-menu-toggle" data-target="navbar-menu">
+          <!-- <span class="icon"><i class="mdi mdi-dots-vertical"></i></span> -->
+          <span class="icon"><i class="fas fa-ellipsis-v"></i></span>
+        </a>
+      </div>
+        <div class="navbar-menu  fadeIn animated faster" id="navbar-menu">
+          <div class="navbar-end">
+            <div class="navbar-item has-dropdown has-dropdown-with-icons has-divider has-user-avatar is-hoverable">
+              <a class="navbar-link is-arrowless">
+                  <div class="is-user-avatar">
+                    <img src="https://avatars.dicebear.com/v2/initials/robertto-sanly.svg" alt="robertto">
+                  </div>
+                  <div class="is-user-name"><span>Robertto</span></div>
+                  <span class="icon"><i class="fas fa-chevron-down"></i></i></span>
+              </a>
+              <div class="navbar-dropdown">
+                  <a href="profile.html" class="navbar-item">
+                    <span class="icon"><i class="fas fa-user "></i></span>
+                    <span>My Profile</span>
+                  </a>
+                  <a class="navbar-item">
+                    <span class="icon"><i class="fas fa-cog"></i></span>
+                    <span>Settings</span>
+                  </a>
+                  <a class="navbar-item">
+                    <span class="icon"><i class="fas fa-envelope"></i></i></span>
+                    <span>Messages</span>
+                  </a>
+                  <hr class="navbar-divider">
+                  <a class="navbar-item">
+                    <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                    <span>Log Out</span>
+                  </a>
+              </div>
+            </div>
+              <a href="index.html" title="About" class="navbar-item has-divider is-desktop-icon-only">
+                <span class="icon"><i class="far fa-question-circle"></i></i></span>
+                <span>About</span>
+              </a>
+              <a title="Log out" class="navbar-item is-desktop-icon-only">
+                <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                <span>Log out</span>
+              </a>
+          </div>
+        </div>
+    </nav>
+    <!-- end of top bar -->
+
+   <!-- start sidebar -->
+    <aside class="aside has-background-white is-placed-left is-expanded with-border">
+      <div class="aside-tools has-text-dark my-3">
+        <div class="aside-tools-label is-size-4 pl-3">
+          <span><b>Oocups</b> | Admin</span>
+        </div>
+      </div>
+      <div class="menu is-menu-main">
+        <p class="menu-label">General</p>
+        <ul class="menu-list">
+          <li>
+            <a href="index.html" class=" has-icon ">
+              <span class="icon"><i class="mdi mdi-desktop-mac"></i></span>
+              <span class="menu-item-label ">Dashboard</span>
+            </a>
+          </li>
+        </ul>
+        <p class="menu-label">Examples</p>
+        <ul class="menu-list">
+          <li>
+            <a href="report.html" class=" has-icon">
+              <span class="icon has-update-mark"><i class="mdi mdi-table"></i></span>
+              <span class="menu-item-label">Report</span>
+            </a>
+          </li>
+          <li>
+            <a href="forms.html" class=" has-icon">
+              <span class="icon"><i class="mdi mdi-square-edit-outline"></i></span>
+              <span class="menu-item-label">Forms</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html" class="is-active is-rounded router-link-active has-icon">
+              <span class="icon"><i class="mdi mdi-account-circle"></i></span>
+              <span class="menu-item-label">Profile</span>
+            </a>
+          </li>
+          <li class="has-dropdown">
+            <a class="has-icon  has-dropdown-icon">
+              <span class="icon"><i class="mdi mdi-view-list"></i></span>
+              <span class="menu-item-label">Submenus</span>
+              <div class="dropdown-icon">
+                <span class="icon"><i class="mdi mdi-plus"></i></span>
+              </div>
+            </a>
+            <ul class="dropdown pl-6" >
+              <li>
+                <a href="#void">
+                  <span>SubmenuOne</span>
+                </a>
+              </li>
+              <li>
+                <a href="#void">
+                  <span>Submenu Two</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p class="menu-label">About</p>
+        <ul class="menu-list">
+          <li>
+            <a href="https://github.com/robertsanly/admin-oocups.github.io" target="_blank" class="has-icon">
+              <span class="icon"><i class="mdi mdi-github-circle"></i></span>
+              <span class="menu-item-label">GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/robertsanly/admin-oocups.github.io" target="_blank" class="has-icon">
+              <span class="icon"><i class="mdi mdi-help-circle"></i></span>
+              <span class="menu-item-label">About</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- end sidebar -->
+
+    <!-- start top content -->
+    <section class="section is-main-section ">
+      <div class="columns">
+        <div class="column is-4 "></div>
+        <div class="column is-4 has-text-centered has-text-grey is-family-secondary has-text-weight-semibold is-size-6">
+          <span>My Profile </span>
+        </div>
+        <div class="column is-4 has-text-right ">
+          <a href="https://github.com/robertsanly/admin-oocups.github.io" target="_blank"> 
+            <button  class="button is-link"><i class="fab fa-github pr-2"></i>Github</i></button>
+          </a>
+        </div>
+        
+      </div>
+      <!-- end card top content -->
+
+      <!-- start main content -->
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <div class="card tile is-child">
+            <header class="card-header">
+              <p class="card-header-title">
+                <span class="icon"><i class="mdi mdi-account-circle default"></i></span>
+                Edit Profile
+              </p>
+            </header>
+              <div class="card-content">
+                <form>
+                  <div class="field is-horizontal">
+                    <div class="field-label is-normal"><label class="label">Avatar</label></div>
+                    <div class="field-body">
+                      <div class="field">
+                        <div class="field file">
+                          <label class="upload control">
+                            <a class="button is-oyen-background">
+                              <span class="icon"><i class="mdi mdi-upload default"></i></span>
+                              <span>Pick a file</span>
+                            </a>
+                            <input type="file">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                      <label class="label">Name</label>
+                    </div>
+                    <div class="field-body">
+                      <div class="field">
+                        <div class="control">
+                          <input type="text" autocomplete="on" name="name" value="John Wick" class="input" required>
+                        </div>
+                        <p class="help">Required. Your name</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                      <label class="label">E-mail</label>
+                    </div>
+                    <div class="field-body">
+                      <div class="field">
+                        <div class="control">
+                          <input type="email" autocomplete="on" name="email" value="john.wick@example.com" class="input" required>
+                        </div>
+                        <p class="help">Required. Your e-mail</p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="field is-horizontal">
+                    <div class="field-label is-normal"></div>
+                    <div class="field-body">
+                      <div class="field">
+                        <div class="control">
+                          <button type="submit" class="button is-oyen-background">
+                            Submit
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <div class="card tile is-child">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span class="icon"><i class="mdi mdi-account default"></i></span>
+                  Profile
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="is-user-avatar image has-max-width is-aligned-center">
+                  <img src="https://avatars.dicebear.com/v2/initials/john-wick.svg" alt="John Doe">
+                </div>
+                <hr>
+                <div class="field">
+                  <label class="label">Name</label>
+                  <div class="control is-clearfix">
+                    <input type="text" readonly value="John Wick" class="input is-static">
+                  </div>
+                </div>
+                <hr>
+                <div class="field">
+                  <label class="label">E-mail</label>
+                  <div class="control is-clearfix">
+                    <input type="text" readonly value="john.wick@example.com" class="input is-static">
+                  </div>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            <span class="icon"><i class="mdi mdi-lock default"></i></span>
+            Change Password
+          </p>
+        </header>
+        <div class="card-content">
+          <form>
+            <div class="field is-horizontal">
+              <div class="field-label is-normal">
+                <label class="label">Current password</label>
+              </div>
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <input type="password" name="password_current" autocomplete="current-password" class="input" required>
+                  </div>
+                  <p class="help">Required. Your current password</p></div>
+              </div>
+            </div>
+            <hr>
+            <div class="field is-horizontal">
+              <div class="field-label is-normal">
+                <label class="label">New password</label>
+              </div>
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <input type="password" autocomplete="new-password" name="password" class="input" required>
+                  </div>
+                  <p class="help">Required. New password</p>
+                </div>
+              </div>
+            </div>
+            <div class="field is-horizontal">
+              <div class="field-label is-normal">
+                <label class="label">Confirm password</label>
+              </div>
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <input type="password" autocomplete="new-password" name="password_confirmation" class="input" required>
+                  </div>
+                  <p class="help">Required. New password one more time</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="field is-horizontal">
+              <div class="field-label is-normal"></div>
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <button type="submit" class="button is-oyen-background">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <div class="is-fixed-bottom">
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="level">
+            <div class="level-left">
+              <div class="level-item">
+                © 2023, Oocups.co
+              </div>
+              <div class="level-item">
+                <a href="index.html" style="height: 20px">
+                  <img src="img/release.png" alt="releaseV" >    
+                </a>
+              </div>
+            </div>
+            <div class="level-right">
+              <div class="level-item">
+                <div class="logo">
+                  <a href="index.html"><i class="fab fa-affiliatetheme"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+          
+    <!-- Scripts below are for demo only -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- Icons below are for demo only. Feel free to use any icon pack. Docs: https://bulma.io/documentation/elements/icon/ -->
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css">
+              
+          
+  </body>
+</html>       

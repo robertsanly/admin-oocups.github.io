@@ -3,9 +3,9 @@
 
 [![version](https://img.shields.io/badge/release-v.1.1.0-orange)](https://robertsanly.github.io/admin-oocups.github.io/)
 
-[![Bulma admin dashboard]()](https://robertsanly.github.io/admin-oocups.github.io/)
+[![Bulma admin dashboard](https://github.com/robertsanly/admin-oocups.github.io/edit/main/docs/dashboard.png)](https://robertsanly.github.io/admin-oocups.github.io/)
 
-**Oocups Admin ** is simple, simple using bulma.
+**Oocups Admin ** simple admin template using bulma.
 
 * Free under Oocups license
 * Built with Bulma CSS Framework

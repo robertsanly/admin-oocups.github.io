@@ -3,7 +3,7 @@
 
 [![version](https://img.shields.io/badge/release-v.1.1.0-orange)](https://robertsanly.github.io/admin-oocups.github.io/)
 
-[![Bulma admin dashboard](https://github.com/robertsanly/admin-oocups.github.io/edit/main/docs/dashboard.png)](https://robertsanly.github.io/admin-oocups.github.io/)
+[![Bulma admin dashboard](https://github.com/robertsanly/admin-oocups.github.io/blob/main/docs/dashboard.png)](https://robertsanly.github.io/admin-oocups.github.io/)
 
 **Oocups Admin ** simple admin template using bulma.
 
